@@ -1,53 +1,70 @@
-body{
+body {
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
-    /* background-color: #eee; */
-    background: url(img/bg-section-top-desktop-1.svg) no-repeat center /cover, url(img/bg-section-top-desktop-2.svg)  no-repeat center /cover;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
-h1{
+
+h1 {
     text-align: center;
     text-shadow: .5px .5px 10px rgb(136, 135, 135);
 }
-.card{
+
+.card {
     width: 400px;
     height: 400px;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
     border: 3px outset rgb(200, 235, 73);
-    box-shadow: 1px 1px 20px 10px rgb(240, 226, 103);
+    box-shadow: 1px 1px 20px 3px rgb(223, 255, 105);
     transition: box-shadow .5s;
     cursor: pointer;
 }
-.card:hover{
-    box-shadow: .5px .5px 20px 10px rgb(247, 239, 168);
+
+.card:hover {
+    box-shadow: .5px .5px 20px 10px rgb(237, 255, 134);
 }
-.image{
+
+.image {
     background: url(img/oil_painting.jpg) no-repeat center /cover;
     width: 400px;
     height: 400px;
 }
-p{
+
+p {
     font-size: 25px;
 }
 
-@media (min-width: 320px) and (max-width: 768px){
-    body{
-        background: unset;
+.footer {
+    flex-shrink: 0;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    body {
+        background-color: #1f1f1f;
     }
-    .card{
+
+    .card {
+        margin-top: 30px;
         width: 250px;
         height: 300px;
     }
-    .image{
+
+    .image {
         background: url(img/oil_painting.jpg) no-repeat center /cover;
         width: 250px;
         height: 250px;
     }
-    h1{
-        font-size: 20px;
+
+    h1 {
+        font-size: 14px;
+        font-weight: bolder;
     }
-    .footer{
+
+    .footer {
         font-size: 13px;
     }
 }
